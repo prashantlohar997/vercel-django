@@ -210,12 +210,12 @@ USE_TZ = True
 
 # MEDIA_ROOT = BASE_DIR / 'static/images'
 
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles') 
+#STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles') 
 
 CORS_ALLOW_ALL_ORIGINS = True
 
 # #  Add configuration for static files storage using whitenoise
-STATICFILES_STORAGE = 'whitenoise.django.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.django.CompressedManifestStaticFilesStorage'
 
 # Dont forget to reset database connection and hide password
 #AWS_QUERYSTRING_AUTH = False
