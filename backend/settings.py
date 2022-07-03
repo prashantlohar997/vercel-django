@@ -210,7 +210,7 @@ USE_TZ = True
 
 # MEDIA_ROOT = BASE_DIR / 'static/images'
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles') 
 
 CORS_ALLOW_ALL_ORIGINS = True
 
@@ -228,6 +228,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'  # or any prefix you choose
 MEDIA_ROOT = str(BASE_DIR) + str(MEDIA_URL)
+
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 CLOUDINARY_STORAGE = {
